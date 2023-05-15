@@ -1,0 +1,68 @@
+.singleFaq {
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  background: #ffffff;
+  gap: 15px;
+  /* Cards/Short Default */
+
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 18px;
+  padding: 25px;
+}
+.activeSingleFaq {
+  border: 1px solid #f6af03;
+}
+.question {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 127%;
+  color: #000000;
+}
+.activeSingleFaq .question {
+  font-weight: 400;
+}
+.answer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+
+  color: #3d3d3d;
+  padding-top: 15px;
+}
+.arrowBox {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  font-size: 24px;
+  color: #f6af03;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.activeSingleFaq .arrowBox {
+  background: #f6af03;
+}
+.activeSingleFaq .arrow {
+  color: #fff;
+  transform: rotate(90deg);
+}
+@media only screen and (max-width: 575px) {
+  .singleFaq {
+    padding: 18px;
+  }
+  .question {
+    font-size: 20px;
+  }
+  .answer {
+    font-size: 16px;
+  }
+}
