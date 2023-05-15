@@ -25,21 +25,25 @@ const ContactUs = () => {
       label: "First Name",
       type: "text",
       name: "firstName",
+      required: true,
     },
     {
       label: "Last Name",
       type: "text",
       name: "lastName",
+      required: true,
     },
     {
       label: "Email",
       type: "email",
       name: "email",
+      required: true,
     },
     {
       label: "Phone Number",
       type: "text",
       name: "phonNumber",
+      required: false,
     },
   ];
   const onChange = (e) => {
@@ -73,7 +77,7 @@ const ContactUs = () => {
                   type={input.type}
                   id={input.name}
                   className={styles.input}
-                  required
+                  required={input.required}
                 />
               </div>
             ))}
