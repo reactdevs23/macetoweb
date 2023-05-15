@@ -1,3 +1,26 @@
+.wrapper {
+  background: #edfaff;
+  padding: 50px 0;
+}
+.container {
+  max-width: 896px;
+  width: 90%;
+  margin: 0 auto;
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  color: #012970;
+}
+.faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 50px;
+}
 .singleFaq {
   display: grid;
   grid-template-columns: 1fr 32px;
@@ -41,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 .arrow {
   font-size: 24px;
@@ -54,6 +78,13 @@
 .activeSingleFaq .arrow {
   color: #fff;
   transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 575px) {
+  .title {
+    font-size: 40px;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 575px) {
   .singleFaq {

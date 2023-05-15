@@ -73,7 +73,6 @@ const ContactUs = () => {
                   type={input.type}
                   id={input.name}
                   className={styles.input}
-                  required
                 />
               </div>
             ))}
@@ -116,7 +115,6 @@ const ContactUs = () => {
             </label>
 
             <textarea
-              required
               rows="1"
               name="message"
               id="message"
@@ -127,7 +125,7 @@ const ContactUs = () => {
               }}
             ></textarea>
           </div>
-          <button className={styles.button} onSubmit={handleSubmit}>
+          <button className={styles.button} onClick={handleSubmit}>
             Send Message
           </button>
         </form>
