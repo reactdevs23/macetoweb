@@ -11,7 +11,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: rgba(10, 11, 22, 0.8);
+  background: rgba(40, 27, 65, 0.8);
   backdrop-filter: blur(7px);
   z-index: 1;
   top: 0;
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
 
-  background: #000;
+  background: #281b41;
   border-radius: 24px;
   padding: 20px;
   min-height: 150px;

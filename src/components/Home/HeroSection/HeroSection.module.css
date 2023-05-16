@@ -1,6 +1,7 @@
 .heroSection {
   background-repeat: no-repeat;
   position: relative;
+  overflow-x: hidden;
 }
 
 .heroSection:before {
