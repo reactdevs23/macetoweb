@@ -15,7 +15,7 @@ const ContactUs = () => {
     subject: "",
   });
   const [activeSubject, setActiveSubject] = useState(0);
-  const [modal, setModal] = useState(false);
+  const [success, setSuccess] = useState(true);
   const subjects = [
     "General Inquiry",
     "General Inquiry",
@@ -53,7 +53,7 @@ const ContactUs = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setModal(true);
+    setSuccess(true);
   };
 
   return (
@@ -66,8 +66,8 @@ const ContactUs = () => {
         </p>
         <div className={styles.container}>
           <form action="" className={styles.form} onSubmit={handleSubmit}>
-            {" "}
             <div className={styles.inputWrapper}>
+              {success && <SuccessModal setModal={setSuccess} />}
               {inputs.map((input, i) => (
                 <div className={styles.inputContainer} key={i}>
                   <label htmlFor={input.name} className={styles.label}>
@@ -141,7 +141,6 @@ const ContactUs = () => {
           </form>
         </div>
       </section>
-      {modal && <SuccessModal setModal={setModal} />}
     </>
   );
 };

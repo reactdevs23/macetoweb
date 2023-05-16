@@ -9,11 +9,10 @@ const SuccessModal = ({ setModal }) => {
         {" "}
         <div className={styles.wrapper}>
           <MdClose className={styles.icon} onClick={() => setModal(false)} />
-
-          <h2 className={styles.title}>Your message was send successfully</h2>
+          <p className={[styles.success, styles.title].join(" ")}>Success</p>
+          <h2 className={styles.text}>Your message was send successfully</h2>
         </div>
       </div>
-      <div className={styles.overlay} onClick={() => setModal(false)}></div>
     </>
   );
 };
