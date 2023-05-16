@@ -86,7 +86,6 @@
 
 @media only screen and (max-width: 520px) {
   .heroSection:before {
-    border-radius: 0 0 200px 200px;
     transform: scale(1.5);
     top: -20%;
   }
