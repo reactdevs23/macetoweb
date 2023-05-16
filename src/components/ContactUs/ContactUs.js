@@ -15,7 +15,7 @@ const ContactUs = () => {
     subject: "",
   });
   const [activeSubject, setActiveSubject] = useState(0);
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const subjects = [
     "General Inquiry",
     "General Inquiry",

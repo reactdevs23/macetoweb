@@ -1,5 +1,5 @@
 .modal {
-  width: 95%;
+  width: 90%;
   max-width: 400px;
   position: fixed;
   top: 50%;
@@ -23,7 +23,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background: #281b41;
   border-radius: 24px;
   padding: 20px;
@@ -48,44 +47,6 @@
   top: 15px;
   font-size: 24px;
   color: #ecddff;
-}
-
-.day {
-  text-align: center;
-}
-
-.form {
-  /* background: #30303e; */
-  border-radius: 18px;
-  /* padding: 18px; */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.tagline {
-  font-family: var(--fontFamily);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 175%;
-  font-feature-settings: "liga" off, "kern" off;
-  color: rgba(236, 221, 255, 0.5);
-}
-.type {
-  font-weight: 600;
-
-  color: #ecddff;
-}
-.user {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
 }
 
 @media only screen and (max-width: 520px) {
