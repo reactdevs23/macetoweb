@@ -1,7 +1,6 @@
 .heroSection {
   background-repeat: no-repeat;
   position: relative;
-  overflow-x: hidden;
 }
 
 .heroSection:before {
@@ -79,6 +78,9 @@
 @media only screen and (max-width: 767px) {
   .container {
     padding-top: 115px;
+  }
+  .heroSection:before {
+    border-radius: 0 0 35% 35%;
   }
   .title {
     font-size: 45px;
